@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaTrevel</title>
+    <link rel="stylesheet" href="izgled.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">MaTravel</a>
+
+            <nav class="navigacija" id="navigacija">
+                <a href="index.html">Početna</a>
+                <a href="destinacije.html">Destinacije</a>
+                <a href="galerija.html">Galerija</a>
+                <a href="ponude.html">Ponude</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+
+            <div class="hamburger" id="hamburger">
+            ☰
+            </div>
+        </div>
+    </header>
+
+    <section class="pocetna skriveno">
+        <video autoplay muted loop playsinline class="pozadinaplaza">
+            <source src="video/plaza.MP4" type="video/MP4">
+        </video>
+
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="odjeljak skriveno">
+                <h1>Otkrijte svijet sa MaTravel</h1>
+                <p>Istražite nove destinacije i stvorite nezaboravna sjećanja.</p>
+                <button>Saznajte više</button>
+            </div>
+        </div>
+    </section>
+    <section class="destinacije skriveno">
+        <div class="container">
+            <h2>Popularne destinacije</h2>
+            <div class="karticepolozaj">
+                <a href="lanzarote.html" class="kartica lanzarote skriveno">
+                    <div class="zoom"></div>
+                    <div class="tamnije"></div>
+                    <div class="karticasadrzaj">
+                        <h3>Lanzarote</h3>
+                        <h4><i class="fa-solid fa-location-dot"></i> Španjolska</h4>
+                    </div>
+                </a>
+                <a href="budimpesta.html" class="kartica budimpesta skriveno2">
+                    <div class="zoom"></div>
+                    <div class="tamnije"></div>
+                    <div class="karticasadrzaj">
+                        <h3>Budimpešta</h3>
+                        <h4><i class="fa-solid fa-location-dot"></i> Mađarska</h4>
+
+                    </div>
+                </a>
+                <a href="casablanca.html" class="kartica casablanca skriveno">
+                    <div class="zoom"></div>
+                    <div class="tamnije"></div>
+                    <div class="karticasadrzaj">
+                        <h3>Casablanca</h3>
+                        <h4><i class="fa-solid fa-location-dot"></i> Maroko</h4>
+
+                    </div>
+                </a>
+                <a href="venecija.html" class="kartica venecija skriveno2">
+                    <div class="zoom"></div>
+                    <div class="tamnije"></div>
+                    <div class="karticasadrzaj">
+                        <h3>Venecija</h3>
+                        <h4><i class="fa-solid fa-location-dot"></i> Italija</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="zastobasmi skriveno">
+        <div class="container">
+            <div class="naslovzastobasmi skriveno">
+                <h2>Zašto baš mi?</h2>
+                <p>Putujte sigurno, jednostavno i bez stresa uz naš tim stručnjaka.</p>
+            </div>
+
+            <div class="karticezasto">
+
+                <div class="karticazasto skriveno">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>Sigurno putovanje</h3>
+                    <p>Vaša sigurnost i zadovoljstvo uvijek su nam na prvom mjestu.</p>
+                </div>
+
+                <div class="karticazasto skriveno2">
+                    <i class="fa-solid fa-tags"></i>
+                    <h3>Najbolje cijene</h3>
+                    <p>Pronađite vrhunske destinacije po povoljnim cijenama.</p>
+                </div>
+
+                <div class="karticazasto skriveno">
+                    <i class="fa-solid fa-plane-departure"></i>
+                    <h3>Brza rezervacija</h3>
+                    <p>Rezervirajte svoje putovanje brzo i jednostavno online.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="prazno"></div>
+
+    <section class="slajdshow skriveno">
+        <div class="kutijaslajd">
+            <div class="slajd active">
+                <img src="slike/slajdshow/venecija.jpg">
+                <div class="poruka">Putovanja za pamćenje</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/verona.jpg">
+                <div class="poruka">Neka avantura počne</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/lanzarote3.jpg">
+                <div class="poruka">Istraži svijet</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/budapest2.jpg">
+                <div class="poruka">Putovanja za pamćenje</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/zagreb.jpg">
+                <div class="poruka">Neka avantura počne</div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2026 MaTrevel</p>
+        <p>Izradio: Mateo Ćorković</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
