@@ -572,10 +572,6 @@ img, video{
 .casablanca{
     background-image: url("slike/casablanca/casablanca.jpg");
 }
-.casablanca:hover{
-    background-image: url("slike/casablanca/casablanca2.JPG");
-    transition: 0.5s ease-in-out;
-}
 .venecija{
     background-image: url("slike/venecija/venecija.jpg");
 }
@@ -619,6 +615,90 @@ h1{
     grid-row: span 2;
 }
 
+
+.kontakt{
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 60px;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    border: 1px solid black;
+    background-color: #d6bea754;
+}
+.kontaktlijevo{
+    padding: 30px;
+}
+.kontaktdesno{
+    padding: 20px;
+}
+.forma{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.forma input{
+    padding: 10px;
+    border: 1px solid black;
+    outline: none;
+}
+.forma textarea{
+    padding: 10px;
+    border: 1px solid black;
+    outline: none;
+}
+.pedesetposto{
+    display: flex;
+    gap: 10px;
+}
+.unutrasnjost{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.forma button{
+    padding: 12px 24px;
+    border: none;
+    color: #FDF6EC;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    backdrop-filter: blur(2px) brightness(0.2);
+    background: rgba(15, 76, 92, 0.25);
+    border: 1px solid #0f4c5c;
+}
+.forma button:hover{
+    background-color: #e9c46a;
+    color: black;
+    transition: 0.5s;
+    backdrop-filter: blur(2px) brightness(1);
+    background: rgba(92, 87, 15, 0.25);
+    border: 1px solid #ccab57;
+    text-decoration: none;
+}
+.infokontakt{
+    font-size: 18px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.infokontakt i {
+    font-size: 30px;
+    padding-right: 20px;
+}
+.kontaktinfo h3{
+    font-size: 23px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: #0f4c5c;
+}
+.kontaktinfo h2{
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.drustvenemreze i{
+    font-size: 30px;
+    padding-right: 10px;
+}
 @media (max-width: 1270px) {
     .container{
         padding: 0 20px;
@@ -630,8 +710,15 @@ h1{
         width: calc(50% - 20px);
     }
     .galerijaslika{
-    grid-auto-rows: 200px;
-}
+        grid-auto-rows: 200px;
+    }
+    .infokontakt{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .kontakt{
+        gap: 10px;
+    }
 
 }
 
@@ -742,5 +829,25 @@ h1{
     }
     .karticaugaleriji.duplo{
         grid-row: span 2;
+    }
+    .kontakt{
+        grid-template-columns: 1fr;
+        gap:10px;
+        margin-top: 80px;
+    }
+    .pedesetposto{
+        flex-direction: column;
+    }
+    .forma{
+        padding: 0 10px 0 10px;
+    }
+    .infokontakt{
+        padding:  7px 0 7px 0;
+    }
+    .kontaktlijevo{
+        padding: 20px 30px 0px 30px;
+    }
+    .kontaktinfo h3{
+        padding-bottom: 10px;
     }
 }

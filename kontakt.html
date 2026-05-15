@@ -1,37 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
     <meta charset="UTF-8">
-    <title>Contact - WanderWorld</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaTrevel</title>
     <link rel="stylesheet" href="izgled.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
-<header class="navbar">
-        <div class="logo">WanderWorld</div>
-
-        <nav class="nav-links" id="navLinks">
-            <a href="index.html">Početna</a>
-            <a href="destinacije.html">Destinacije</a>
-            <a href="galerija.html">Galerija</a>
-            <a href="ponude.html">Ponude</a>
-            <a href="kontakt.html">Kontakt</a>
-        </nav>
-        <div class="hamburger" id="hamburger">
-        ☰
+    <header class="navbar tamnija">
+        <div class="container">
+            <a href="index.html" class="logo">MaTravel</a>
+            <nav class="navigacija" id="navigacija">
+                <a href="index.html">Početna</a>
+                <a href="destinacije.html">Destinacije</a>
+                <a href="galerija.html">Galerija</a>
+                <a href="ponude.html">Ponude</a>
+                <a href="kontakt.html" class="active">Kontakt</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+            ☰
+            </div>
         </div>
     </header>
+    <div class="prazno"></div>
 
-<section class="page">
-    <h1>Contact Us</h1>
-
-    <form class="contact-form">
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <textarea placeholder="Message"></textarea>
-        <button type="submit">Send</button>
-    </form>
-</section>
-<script src="script.js"></script>
+    <div class="container">
+        <section class="kontakt">
+            <div class="kontaktlijevo">
+                <div class="kontaktinfo">
+                    <h2>Kontakt</h2>
+                    <h3>Pošaljite nam pitanje</h3>
+                    <p>Za sva pitanja nam pošaljite poruku bila ona vezana za putovanje ili nešto drugo. </p>
+                    <div class="infokontakt">
+                        <i class="fa-regular fa-envelope"></i>info@matravel.hr
+                    </div>
+                    <div class="drustvenemreze">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="kontaktdesno">
+                <form class="forma">
+                    <div class="pedesetposto">
+                        <div class="unutrasnjost">
+                            <lable>Ime</lable>
+                            <input type="text"  required>
+                        </div>
+                        <div class="unutrasnjost">
+                            <lable>Prezime</lable>
+                            <input type="text"  required>
+                        </div>
+                    </div>
+                    <div class="unutrasnjost stoposto">
+                        <label>E-mail</label><input type="email" required>
+                    </div>
+                    <div class="unutrasnjost stoposto">
+                        <label>Destinacija</label><input type="text" >
+                    </div>
+                    <div class="unutrasnjost stoposto">
+                        <label>Poruka</label><textarea rows="5"  required></textarea>
+                    </div>
+                    
+                
+                    <button type="submit">Pošalji</button>
+                </form>
+            </div>
+            
+        </section>
+    </div>
+    <section class="slajdshow skriveno">
+        <div class="kutijaslajd">
+            <div class="slajd active">
+                <img src="slike/slajdshow/venecija.jpg">
+                <div class="poruka">Putovanja za pamćenje</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/verona.jpg">
+                <div class="poruka">Neka avantura počne</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/lanzarote3.jpg">
+                <div class="poruka">Istraži svijet</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/budapest2.jpg">
+                <div class="poruka">Putovanja za pamćenje</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/zagreb.jpg">
+                <div class="poruka">Neka avantura počne</div>
+            </div>
+        </div>
+         <footer>
+        <p>© 2026 MaTrevel</p>
+        <p>Izradio: Mateo Ćorković</p>
+    </footer>
+    </section>
+   
+    <script src="script.js"></script>
 </body>
 </html>
