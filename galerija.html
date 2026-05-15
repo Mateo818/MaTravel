@@ -1,39 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
     <meta charset="UTF-8">
-    <title>Gallery - WanderWorld</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaTrevel</title>
     <link rel="stylesheet" href="izgled.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
+    <header class="navbar tamnija">
+        <div class="container">
+            <a href="index.html" class="logo">MaTravel</a>
 
-<header class="navbar">
-        <div class="logo">WanderWorld</div>
+            <nav class="navigacija" id="navigacija">
+                <a href="index.html">Početna</a>
+                <a href="destinacije.html">Destinacije</a>
+                <a href="galerija.html" class="active">Galerija</a>
+                <a href="ponude.html">Ponude</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
 
-        <nav class="nav-links" id="navLinks">
-            <a href="index.html">Početna</a>
-            <a href="destinacije.html">Destinacije</a>
-            <a href="galerija.html">Galerija</a>
-            <a href="ponude.html">Ponude</a>
-            <a href="kontakt.html">Kontakt</a>
-        </nav>
-        <div class="hamburger" id="hamburger">
-        ☰
+            <div class="hamburger" id="hamburger">
+            ☰
+            </div>
         </div>
     </header>
+    <div class="prazno"></div>
 
-<section class="page">
-    <h1>Travel Gallery</h1>
+    <div class="container">
+        <h1>Galerija</h1>
+        <section class="galerijaslika">
+            <div class="karticaugaleriji">
+                <img src="slike/galerija/2B2A3710.JPG">
+            </div>
+            <div class="karticaugaleriji duplo">
+                <img src="slike/galerija/2B2A3971.jpg">
+            </div>
+            <div class="karticaugaleriji">
+                <img src="slike/galerija/IMG_3833.jpg">
+            </div>
+            <div class="karticaugaleriji duplo">
+                <img src="slike/galerija/2B2A4210.jpg">
+            </div>
+            <div class="karticaugaleriji">
+                <img src="slike/galerija/IMG_3870.jpg">
+            </div>
+            <div class="karticaugaleriji">
+                <img src="slike/galerija/casablanca.jpg">
+            </div>
+            <div class="karticaugaleriji duplo">
+                <img src="slike/galerija/2B2A3848.jpg">
+            </div>
+            <div class="karticaugaleriji">
+                <img src="slike/galerija/2B2A3831.jpg">
+            </div>
+            <div class="karticaugaleriji duplo">
+                <img src="slike/galerija/IMG_6827.jpg">
+            </div>
 
-    <div class="grid">
-        <img src="images/img1.jpg" loading="lazy">
-        <img src="images/img2.jpg" loading="lazy">
-        <img src="images/img3.jpg" loading="lazy">
-        <img src="images/img4.jpg" loading="lazy">
-        <img src="images/img5.jpg" loading="lazy">
-        <img src="images/img6.jpg" loading="lazy">
+            <div class="karticaugaleriji">
+                <img src="slike/galerija/IMG_3898.JPG">
+            </div>
+            <div class="karticaugaleriji">
+                <img src="slike/galerija/IMG_3849.jpg">
+            </div>
+            <div class="karticaugaleriji duplo">
+                <img src="slike/galerija/IMG_6922.jpg">
+            </div>
+            <div class="karticaugaleriji">
+                <img src="slike/galerija/IMG_3918.jpg">
+            </div>
+            <div class="karticaugaleriji duplo">
+                <img src="slike/galerija/IMG_6864.jpg">
+            </div>
+            <div class="karticaugaleriji">
+                <img src="slike/galerija/IMG_3838.jpg">
+            </div>
+        </section>
+        
     </div>
-</section>
-<script src="script.js"></script>
+    
+    
+
+    
+    
+    <section class="slajdshow skriveno">
+        <div class="kutijaslajd">
+            <div class="slajd active">
+                <img src="slike/slajdshow/venecija.jpg">
+                <div class="poruka">Putovanja za pamćenje</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/verona.jpg">
+                <div class="poruka">Neka avantura počne</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/lanzarote3.jpg">
+                <div class="poruka">Istraži svijet</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/budapest2.jpg">
+                <div class="poruka">Putovanja za pamćenje</div>
+            </div>
+            <div class="slajd">
+                <img src="slike/slajdshow/zagreb.jpg">
+                <div class="poruka">Neka avantura počne</div>
+            </div>
+        </div>
+         <footer>
+        <p>© 2026 MaTrevel</p>
+        <p>Izradio: Mateo Ćorković</p>
+    </footer>
+    </section>
+   
+    <script src="script.js"></script>
 </body>
 </html>
