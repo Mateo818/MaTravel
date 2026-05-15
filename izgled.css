@@ -573,7 +573,7 @@ img, video{
     background-image: url("slike/casablanca/casablanca.jpg");
 }
 .casablanca:hover{
-    background-image: url("slike/casablanca/casablanca2.jpg");
+    background-image: url("slike/casablanca/casablanca2.JPG");
     transition: 0.5s ease-in-out;
 }
 .venecija{
